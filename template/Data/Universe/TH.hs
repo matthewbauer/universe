@@ -16,6 +16,7 @@ import Data.Foldable
 import Data.Some
 import Data.Universe.Class
 import Language.Haskell.TH
+import Data.Monoid
 
 -- | Given a type name, @N@, create an @instance Universe (Some N)@.  @N@ should represent a type of kind @k -> *@.
 deriveSomeUniverse :: Name -> Q [Dec]
